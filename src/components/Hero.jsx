@@ -34,9 +34,9 @@ const Hero = () => {
                                 Schedule Your Demo
                                 <span className="material-symbols-outlined arrow-icon">arrow_forward</span>
                             </button>
-                            <button className="btn-specs">
+                            {/* <button className="btn-specs">
                                 View Case Studies
-                            </button>
+                            </button> */}
                         </div>
 
                         {/* Trust Bar */}

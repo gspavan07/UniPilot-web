@@ -31,14 +31,16 @@ const Navbar = () => {
 
           {/* Mobile Actions */}
           <div className="mobile-actions">
-            <button className="btn-login">Log In</button>
+            {/* <button className="btn-login">Log In</button> */}
             <button className="btn-demo">Schedule Demo</button>
+            <button className="btn-demo1">Contact Us</button>
           </div>
         </div>
 
         <div className="actions desktop-only">
-          <button className="btn-login">Log In</button>
+          {/* <button className="btn-login">Log In</button> */}
           <button className="btn-demo">Schedule Demo</button>
+          <button className="btn-demo1">Contact Us</button>
         </div>
       </div>
     </nav>

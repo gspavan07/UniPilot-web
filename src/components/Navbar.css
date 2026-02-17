@@ -192,6 +192,27 @@
     box-shadow: 0 15px 20px -3px rgba(37, 99, 235, 0.4);
 }
 
+.btn-demo1 {
+    background-color: white;
+    color: rgb(14, 14, 14);
+    padding: 0.875rem 2rem;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 800;
+    /* box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.4); */
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    border: 1px solid grey;
+    text-align: center;
+}
+
+.btn-demo1:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    /* box-shadow: 0 15px 20px -3px rgba(37, 99, 235, 0.4); */
+}
+
+
 /* Small mobile adj */
 @media (max-width: 480px) {
     .navbar {
