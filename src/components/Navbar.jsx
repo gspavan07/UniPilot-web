@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import rocketIcon from '../assets/rocket.svg';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +13,9 @@ const Navbar = () => {
     <nav className={`navbar ${isMenuOpen ? 'menu-open' : ''}`}>
       <div className="container">
         <div className="logo">
-          <div className="logo-box">U</div>
+          <div className="logo-box">
+            <img src={rocketIcon} alt="Rocket" className="logo-icon" />
+          </div>
           <span>UniPilot</span>
         </div>
 
@@ -32,15 +35,15 @@ const Navbar = () => {
           {/* Mobile Actions */}
           <div className="mobile-actions">
             {/* <button className="btn-login">Log In</button> */}
-            <button className="btn-demo">Schedule Demo</button>
-            <button className="btn-demo1">Contact Us</button>
+            <button className="btn-demo" onClick={() => document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' })}>Schedule Demo</button>
+            <button className="btn-demo1" onClick={() => document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' })}>Contact Us</button>
           </div>
         </div>
 
         <div className="actions desktop-only">
           {/* <button className="btn-login">Log In</button> */}
-          <button className="btn-demo">Schedule Demo</button>
-          <button className="btn-demo1">Contact Us</button>
+          <button className="btn-demo" onClick={() => document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' })}>Schedule Demo</button>
+          <button className="btn-demo1" onClick={() => document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' })}>Contact Us</button>
         </div>
       </div>
     </nav>

@@ -9,6 +9,7 @@ import WhyUniPilot from './components/WhyUniPilot'
 import Performance from './components/Performance'
 import Benefits from './components/Benefits'
 import MobileSection from './components/MobileSection'
+import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Performance />
         <Benefits />
         <MobileSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>

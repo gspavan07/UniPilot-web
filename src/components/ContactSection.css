@@ -1,0 +1,124 @@
+.contact-section {
+    padding: 8rem 0;
+    background-color: var(--slate-50);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-header {
+    text-align: left;
+    max-width: 800px;
+    margin-bottom: 5rem;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--slate-900);
+    margin-bottom: 1.5rem;
+    line-height: 1.15;
+}
+
+.contact-desc {
+    font-size: 1.25rem;
+    color: var(--slate-600);
+    line-height: 1.625;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .contact-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.contact-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    text-align: left;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.contact-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: var(--blue-50);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-icon-wrapper .material-symbols-outlined {
+    font-size: 2rem;
+}
+
+.contact-label {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--slate-900);
+    margin-bottom: 0.5rem;
+}
+
+.contact-sub {
+    font-size: 0.875rem;
+    color: var(--slate-500);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.contact-link {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-link:hover {
+    color: var(--blue-900);
+    text-decoration: underline;
+}
+
+.contact-text {
+    color: var(--slate-700);
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+/* Responsive Overrides */
+@media (max-width: 767px) {
+    .contact-section {
+        padding: 5rem 0;
+    }
+
+    .contact-header {
+        margin-bottom: 3rem;
+    }
+
+    .contact-title {
+        font-size: 2.25rem;
+    }
+
+    .contact-desc {
+        font-size: 1rem;
+    }
+}

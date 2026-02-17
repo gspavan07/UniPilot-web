@@ -58,6 +58,13 @@
     box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
 }
 
+.logo-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
 .nav-links {
     display: none;
 }
