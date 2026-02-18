@@ -31,6 +31,7 @@ const Navbar = () => {
           <a href="#why-unipilot" className="nav-link" onClick={() => setIsMenuOpen(false)}>Why UniPilot</a>
           <a href="#security" className="nav-link" onClick={() => setIsMenuOpen(false)}>Security</a>
           <a href="#benefits" className="nav-link" onClick={() => setIsMenuOpen(false)}>Benefits</a>
+          <a href="#teams" className="nav-link" onClick={() => setIsMenuOpen(false)}>Our Team</a>
 
           {/* Mobile Actions */}
           <div className="mobile-actions">
