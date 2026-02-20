@@ -349,17 +349,39 @@
   }
 
   .hero-visual {
-    height: 480px;
+    height: 440px;
   }
 
   .stack-item {
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: 1.5rem;
-    margin-bottom: -60px;
+    margin-bottom: -70px;
   }
 
   .hero-stack:hover .stack-item-1 {
-    transform: translate3d(30px, -40px, 70px) rotateX(8deg) rotateY(-10deg);
+    transform: translate3d(15px, -20px, 50px) rotateX(5deg) rotateY(-5deg);
+  }
+
+  .hero-stack:hover .stack-item-2 {
+    transform: translate3d(10px, -10px, 30px);
+  }
+
+  .hero-stack:hover .stack-item-3 {
+    transform: translate3d(5px, 0px, 10px);
+  }
+
+  .hero-stack:hover .stack-item-4 {
+    transform: translate3d(-5px, 10px, -10px);
+  }
+
+  .mock-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+
+  .hidden {
+    display: none !important;
   }
 }
 
@@ -393,13 +415,12 @@
   }
 
   .hero-visual {
-    height: 400px;
-    margin-top: 2rem;
+    height: 380px;
+    margin-top: 1rem;
   }
 
-  .mock-stats {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .mock-title {
+    font-size: 1.125rem;
   }
 
   .logos-scroller {
@@ -413,15 +434,23 @@
   }
 
   .hero-visual {
-    height: 300px;
+    height: 340px;
   }
 
   .stack-item {
-    margin-bottom: -40px;
-    padding: 1.25rem;
+    margin-bottom: -60px;
+    padding: 1rem;
+  }
+
+  .mock-title {
+    font-size: 1rem;
   }
 
   .stat-num {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
+  }
+
+  .stat-label {
+    font-size: 0.6rem;
   }
 }

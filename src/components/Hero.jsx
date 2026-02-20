@@ -70,7 +70,7 @@ const Hero = () => {
                     <div className="stat-num">98%</div>
                     <div className="stat-label">Scripts Digitalized</div>
                   </div>
-                  <div className="stat-box">
+                  <div className="stat-box hidden">
                     <div className="stat-num">48h</div>
                     <div className="stat-label">Result TAT</div>
                   </div>
