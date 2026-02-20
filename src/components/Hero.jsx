@@ -25,9 +25,8 @@ const Hero = () => {
             </h1>
 
             <p className="hero-desc animate-blur-focus delay-200">
-              One Platform. Complete Control. 137+ Features. <br />
-              Powering Many Universities Across India with Enterprise
-              Resilience.
+              One Platform. Complete Control. 60+ Features. <br />
+              Powering Many Universities with Enterprise Resilience.
             </p>
 
             <div className="hero-buttons animate-blur-focus delay-300">

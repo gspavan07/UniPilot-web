@@ -19,8 +19,7 @@ const Modules = () => {
           <span className="section-badge">Comprehensive Suite</span>
           <h2 className="section-title">The Modules Powering Excellence</h2>
           <p className="section-desc">
-            137+ enterprise features precision-engineered for India's most
-            ambitious universities.
+            60+ enterprise features precision-engineered for universities.
           </p>
         </div>
 

@@ -74,11 +74,11 @@ const WhyUniPilot = () => {
                   <span className="stat-label">Uptime SLA</span>
                 </div>
                 <div className="stat-card">
-                  <span className="stat-value">137+</span>
+                  <span className="stat-value">20+</span>
                   <span className="stat-label">Modules</span>
                 </div>
                 <div className="stat-card">
-                  <span className="stat-value">20+</span>
+                  <span className="stat-value">60+</span>
                   <span className="stat-label">Features</span>
                 </div>
                 <div className="stat-card">
