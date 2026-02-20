@@ -1,241 +1,241 @@
 .why-section {
-    padding: 10rem 0;
-    background-color: white;
+  padding: 10rem 0;
+  background-color: white;
 }
 
 .why-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 6rem;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6rem;
+  align-items: center;
 }
 
 @media (min-width: 1024px) {
-    .why-grid {
-        grid-template-columns: 1.2fr 1fr;
-    }
+  .why-grid {
+    grid-template-columns: 1.2fr 1fr;
+  }
 }
 
 .benefit-list {
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .benefit-item {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
 }
 
 .benefit-icon {
-    font-size: 2.5rem;
-    background: var(--slate-50);
-    width: 5rem;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1.5rem;
-    flex-shrink: 0;
+  font-size: 2.5rem;
+  background: var(--slate-50);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  flex-shrink: 0;
 }
 
 .benefit-item h4 {
-    font-size: 1.25rem;
-    font-weight: 800;
-    color: var(--slate-900);
-    margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--slate-900);
+  margin-bottom: 0.5rem;
 }
 
 .benefit-item p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--slate-600);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--slate-600);
 }
 
 .stats-board {
-    background: var(--slate-900);
-    padding: 4rem;
-    border-radius: 3rem;
-    color: white;
-    position: relative;
-    overflow: hidden;
+  background: var(--slate-900);
+  padding: 4rem;
+  border-radius: 3rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
 }
 
 .stats-header {
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 0.2em;
-    font-size: 0.75rem;
-    color: var(--primary);
-    margin-bottom: 3rem;
-    text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: var(--primary);
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .stats-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
 }
 
 .stat-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .stat-value {
-    font-size: 3rem;
-    font-weight: 950;
-    line-height: 1;
-    margin-bottom: 0.5rem;
-    background: linear-gradient(135deg, white 0%, var(--primary) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-weight: 950;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, white 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .stat-label {
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--slate-400);
-    text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--slate-400);
+  text-transform: uppercase;
 }
 
 .pulse-network {
-    margin-top: 4rem;
-    height: 12rem;
-    background: rgba(255, 255, 255, 0.03);
-    border-radius: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    position: relative;
-    overflow: hidden;
+  margin-top: 4rem;
+  height: 12rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
 }
 
 .scan-line {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--primary), transparent);
-    animation: scan 4s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  animation: scan 4s linear infinite;
 }
 
 @keyframes scan {
-    0% {
-        transform: translateY(-12rem);
-    }
+  0% {
+    transform: translateY(-12rem);
+  }
 
-    100% {
-        transform: translateY(12rem);
-    }
+  100% {
+    transform: translateY(12rem);
+  }
 }
 
 .security-lock {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 4rem;
-    height: 4rem;
-    color: var(--primary);
-    filter: drop-shadow(0 0 15px var(--primary));
-    opacity: 0.9;
-    z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+  height: 4rem;
+  color: var(--primary);
+  filter: drop-shadow(0 0 15px var(--primary));
+  opacity: 0.9;
+  z-index: 1;
 }
 
 .lock-icon {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* Responsive Overrides */
 @media (max-width: 1023px) {
-    .why-section {
-        padding: 6rem 0;
-    }
+  .why-section {
+    padding: 6rem 0;
+  }
 
-    .why-grid {
-        gap: 4rem;
-    }
+  .why-grid {
+    gap: 4rem;
+  }
 
-    .stats-board {
-        padding: 3rem;
-        border-radius: 2rem;
-    }
+  .stats-board {
+    padding: 3rem;
+    border-radius: 2rem;
+  }
 
-    .stats-grid {
-        gap: 2rem;
-    }
+  .stats-grid {
+    gap: 2rem;
+  }
 
-    .stat-value {
-        font-size: 2.5rem;
-    }
+  .stat-value {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 767px) {
-    .why-section {
-        padding: 4rem 0;
-    }
+  .why-section {
+    padding: 4rem 0;
+  }
 
-    .why-grid {
-        gap: 3rem;
-    }
+  .why-grid {
+    gap: 3rem;
+  }
 
-    .benefit-item {
-        gap: 1.25rem;
-    }
+  .benefit-item {
+    gap: 1.25rem;
+  }
 
-    .benefit-icon {
-        width: 3.5rem;
-        height: 3.5rem;
-        font-size: 1.75rem;
-        border-radius: 1rem;
-    }
+  .benefit-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.75rem;
+    border-radius: 1rem;
+  }
 
-    .benefit-item h4 {
-        font-size: 1.125rem;
-    }
+  .benefit-item h4 {
+    font-size: 1.125rem;
+  }
 
-    .benefit-item p {
-        font-size: 0.9375rem;
-    }
+  .benefit-item p {
+    font-size: 0.9375rem;
+  }
 
-    .stats-board {
-        padding: 2rem;
-        border-radius: 1.5rem;
-    }
+  .stats-board {
+    padding: 2rem;
+    border-radius: 1.5rem;
+  }
 
-    .stats-header {
-        margin-bottom: 2rem;
-        font-size: 0.625rem;
-    }
+  .stats-header {
+    margin-bottom: 2rem;
+    font-size: 0.625rem;
+  }
 
-    .stats-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 
-    .pulse-network {
-        margin-top: 3rem;
-        height: 10rem;
-    }
+  .pulse-network {
+    margin-top: 3rem;
+    height: 10rem;
+  }
 
-    .stat-value {
-        font-size: 3rem;
-    }
+  .stat-value {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .benefit-icon {
-        width: 3rem;
-        height: 3rem;
-        font-size: 1.5rem;
-    }
+  .benefit-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
 
-    .stat-value {
-        font-size: 2.5rem;
-    }
+  .stat-value {
+    font-size: 2.5rem;
+  }
 }

@@ -1,209 +1,147 @@
 .footer-section {
-    background-color: var(--alabaster);
-    padding-top: 8rem;
-    padding-bottom: 4rem;
-    border-top: 1px solid var(--slate-200);
+  background-color: #020617;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 4rem;
-    margin-bottom: 6rem;
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
 }
 
-@media (min-width: 768px) {
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-    }
+.dual-logos {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-@media (min-width: 1024px) {
-    .footer-grid {
-        grid-template-columns: 2fr 1fr 1fr 1fr;
-        gap: 5rem;
-    }
+.footer-logo.unipilot-logo {
+  height: 3.5rem;
+  width: auto;
+  filter: brightness(1.2);
 }
 
-.brand-social-row {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-    margin-top: 1.5rem;
+.footer-logo.ofzen-logo {
+  height: 2rem; /* Adjusted from 8rem for better visual balance */
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
 }
 
-.footer-logo {
-    height: 6rem;
-    width: auto;
-    object-fit: contain;
-    display: block;
+.logo-divider {
+  width: 1px;
+  height: 2rem;
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.brand-desc {
-    color: var(--slate-500);
-    font-weight: 500;
-    max-width: 24rem;
-    margin-bottom: 2rem;
-    font-size: 1.125rem;
-    line-height: 1.625;
+.ofzen-branding {
+  font-size: 0.875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--slate-400);
 }
 
-.social-links {
-    display: flex;
-    gap: 1rem;
+.footer-nav {
+  display: flex;
+  gap: 2.5rem;
 }
 
-.social-icon {
-    width: 2.75rem;
-    height: 2.75rem;
-    background-color: white;
-    border: 1px solid var(--slate-200);
-    border-radius: 0.875rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--slate-500);
-    cursor: pointer;
-    box-shadow: var(--shadow-soft);
-    transition: all 0.2s;
+.footer-nav a {
+  color: var(--slate-300);
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: color 0.3s ease;
 }
 
-.social-icon:hover {
-    border-color: rgba(37, 99, 235, 0.3);
-    color: var(--primary);
+.footer-nav a:hover {
+  color: white;
 }
 
-.footer-col h4 {
-    font-weight: 900;
-    color: var(--slate-900);
-    margin-bottom: 2.5rem;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-}
-
-.footer-col ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-}
-
-.footer-col a {
-    font-size: 0.875rem;
-    /* text-sm */
-    color: var(--slate-600);
-    font-weight: 700;
-    transition: color 0.2s;
-}
-
-.footer-col a:hover {
-    color: var(--primary);
+.footer-separator {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  width: 100%;
+  margin-bottom: 3rem;
 }
 
 .footer-bottom {
-    padding-top: 4rem;
-    border-top: 1px solid var(--slate-200);
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (min-width: 768px) {
-    .footer-bottom {
-        flex-direction: row;
-    }
+.copyright p {
+  color: var(--slate-500);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.copyright {
-    color: var(--slate-400);
-    font-weight: 900;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-align: center;
+.social-links {
+  display: flex;
+  gap: 1.5rem;
 }
 
-.legal-links {
-    display: flex;
-    gap: 3rem;
+.social-links a {
+  color: var(--slate-400);
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.legal-links a {
-    color: var(--slate-500);
-    font-weight: 700;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    transition: color 0.2s;
-}
-
-.legal-links a:hover {
-    color: var(--slate-900);
+.social-links a:hover {
+  color: white;
 }
 
 /* Responsive Overrides */
 @media (max-width: 1023px) {
-    .footer-section {
-        padding-top: 6rem;
-    }
+  .footer-top {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
 
-    .footer-grid {
-        gap: 3rem;
-        margin-bottom: 4rem;
-    }
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
 }
 
 @media (max-width: 767px) {
-    .footer-section {
-        padding-top: 5rem;
-        padding-bottom: 3rem;
-    }
+  .footer-section {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
 
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        text-align: center;
-        /* Center align on mobile often looks better for footers */
-    }
+  .dual-logos {
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-    .brand-social-row,
-    .footer-col ul,
-    .social-links {
-        justify-content: center;
-        align-items: center;
-    }
+  .logo-divider {
+    width: 2rem;
+    height: 1px;
+  }
 
-    .footer-logo {
-        height: 5rem;
-        margin: 0 auto;
-    }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
 
-    .brand-desc {
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1rem;
-    }
+  .footer-nav {
+    gap: 1rem;
+  }
 
-    .footer-col h4 {
-        margin-bottom: 1.5rem;
-        font-size: 0.875rem;
-    }
-
-    /* Center align links */
-    .footer-col ul {
-        align-items: center;
-    }
-
-    .footer-bottom {
-        padding-top: 2rem;
-        gap: 1.5rem;
-    }
-
-    .legal-links {
-        gap: 1.5rem;
-        flex-direction: column;
-        align-items: center;
-    }
+  .footer-nav a {
+    font-size: 0.75rem;
+  }
 }

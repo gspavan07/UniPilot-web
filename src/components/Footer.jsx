@@ -1,69 +1,57 @@
-
-import React from 'react';
-import './Footer.css';
-import logo from '../assets/logo.png';
-
+import React from "react";
+import "./Footer.css";
+import logo from "../assets/logo.png";
+import { Mail, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
-    return (
-        <footer className="footer-section">
-            <div className="container">
-                <div className="footer-grid">
-                    <div className="footer-brand">
-                        <p className="brand-desc">
-                            The premium operating system for India's leading universities. Intelligent, modular, and built for the future.
-                        </p>
-                        <div className="brand-social-row">
-                            <a href="https://ofzen.in/" target="_blank" rel="noopener noreferrer">
-                                <img src={logo} alt="ofzen" className="footer-logo" />
-                            </a>
-                            <a href="mailto:unipilot.ent@gmail.com" className="social-icon">
-                                <span className="material-icons">mail</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="footer-col">
-                        <h4>Modules</h4>
-                        <ul>
-                            <li><a href="#">Exam Suite</a></li>
-                            <li><a href="#">Finance Hub</a></li>
-                            <li><a href="#">Campus Logistics</a></li>
-                            <li><a href="#">Career Launchpad</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="footer-col">
-                        <h4>Platform</h4>
-                        <ul>
-                            <li><a href="#">Cloud Infrastructure</a></li>
-                            <li><a href="#">Security Stack</a></li>
-                            <li><a href="#">API Gateway</a></li>
-                            <li><a href="#">Compliance</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="footer-col">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#">Our Mission</a></li>
-                            <li><a href="#">Engineering Blog</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className="footer-bottom">
-                    <p className="copyright">© 2026 Unipilot . An Ofzen Product . All rights reserved.</p>
-                    <div className="legal-links">
-                        <a href="#">Privacy Architecture</a>
-                        <a href="#">Governance</a>
-                    </div>
-                </div>
+  return (
+    <footer className="footer-section">
+      <div className="container">
+        <div className="footer-top">
+          <div className="footer-branding">
+            <div className="dual-logos">
+              <img
+                src="/unipilot.png"
+                alt="UniPilot"
+                className="footer-logo unipilot-logo"
+              />
+              <div className="logo-divider"></div>
+              <img src={logo} alt="OFZEN" className="footer-logo ofzen-logo" />
             </div>
-        </footer>
-    );
+          </div>
+
+          <nav className="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#why-unipilot">Why UniPilot</a>
+            <a href="#security">Security</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#teams">Team</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div className="footer-separator"></div>
+
+        <div className="footer-bottom">
+          <div className="copyright">
+            <p>© 2026 UniPilot. All rights reserved.</p>
+          </div>
+          <div className="social-links">
+            <a href="mailto:support@unipilot.in" aria-label="Email">
+              <Mail size={20} />
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <Linkedin size={20} />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <Instagram size={20} />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
