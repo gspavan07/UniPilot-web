@@ -10,13 +10,13 @@ const Hero = () => {
       <div className="container">
         <div className="hero-grid">
           <div className="hero-content">
-            {/* <div className="badge animate-blur-focus">
+            <div className="badge animate-blur-focus">
               <span className="ping-wrapper">
                 <span className="ping"></span>
                 <span className="dot"></span>
               </span>
-              India's Leading University ERP
-            </div> */}
+              University ERP
+            </div>
 
             <h1 className="hero-title animate-blur-focus delay-100">
               Transform University <br />
