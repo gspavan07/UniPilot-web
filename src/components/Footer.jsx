@@ -10,24 +10,32 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-branding">
             <div className="dual-logos">
-              <img
-                src="/unipilot.png"
-                alt="UniPilot"
-                className="footer-logo unipilot-logo"
-              />
+              <a href="https://unipilot.in">
+                <img
+                  src="/unipilot.png"
+                  alt="UniPilot"
+                  className="footer-logo unipilot-logo"
+                />
+              </a>
               <div className="logo-divider"></div>
-              <img src={logo} alt="OFZEN" className="footer-logo ofzen-logo" />
+              <a href="https://ofzen.in">
+                <img
+                  src={logo}
+                  alt="OFZEN"
+                  className="footer-logo ofzen-logo"
+                />
+              </a>
             </div>
           </div>
 
           <nav className="footer-nav">
-            <a href="#home">Home</a>
+            <a href="#">Home</a>
             <a href="#features">Features</a>
             <a href="#why-unipilot">Why UniPilot</a>
             <a href="#security">Security</a>
             <a href="#benefits">Benefits</a>
             <a href="#teams">Team</a>
-            <a href="#contact">Contact</a>
+            {/* <a href="#contact">Contact</a> */}
           </nav>
         </div>
 

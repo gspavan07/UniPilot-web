@@ -74,21 +74,23 @@ const Navbar = () => {
             {/* <button className="btn-login">Log In</button> */}
             <button
               className="btn-demo"
-              onClick={() =>
+              onClick={() => {
+                setIsMenuOpen(false);
                 document
                   .getElementById("contact-us")
-                  .scrollIntoView({ behavior: "smooth" })
-              }
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
             >
               Schedule Demo
             </button>
             <button
               className="btn-demo1"
-              onClick={() =>
+              onClick={() => {
+                setIsMenuOpen(false);
                 document
                   .getElementById("contact-us")
-                  .scrollIntoView({ behavior: "smooth" })
-              }
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
             >
               Contact Us
             </button>

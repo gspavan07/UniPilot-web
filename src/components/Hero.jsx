@@ -30,7 +30,14 @@ const Hero = () => {
             </p>
 
             <div className="hero-buttons animate-blur-focus delay-300">
-              <button className="btn-explore group">
+              <button
+                onClick={() =>
+                  document
+                    .getElementById("contact-us")
+                    .scrollIntoView({ behavior: "smooth" })
+                }
+                className="btn-explore group"
+              >
                 Schedule Your Demo
                 <span className="material-symbols-outlined arrow-icon">
                   arrow_forward
@@ -63,7 +70,7 @@ const Hero = () => {
               >
                 <div className="card-header">
                   <span className="mock-title">Exam Controller</span>
-                  <span className="status-badge">Live</span>
+                  {/* <span className="status-badge">Live</span> */}
                 </div>
                 <div className="mock-stats">
                   <div className="stat-box">
