@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-branding">
             <div className="dual-logos">
-              <a href="https://unipilot.in">
+              <a href="#">
                 <img
                   src="/unipilot.png"
                   alt="UniPilot"
@@ -18,7 +18,7 @@ const Footer = () => {
                 />
               </a>
               <div className="logo-divider"></div>
-              <a href="https://ofzen.in">
+              <a target="_blank" href="https://ofzen.in">
                 <img
                   src={logo}
                   alt="OFZEN"
