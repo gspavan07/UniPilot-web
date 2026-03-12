@@ -1,17 +1,17 @@
-import React from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import ChallengeSection from './components/ChallengeSection'
-import Modules from './components/Modules'
-import InteractiveDemo from './components/InteractiveDemo'
-import WhyUniPilot from './components/WhyUniPilot'
-import Performance from './components/Performance'
-import Benefits from './components/Benefits'
-import MobileSection from './components/MobileSection'
-import ContactSection from './components/ContactSection'
-import Teams from './components/Teams'
-import Footer from './components/Footer'
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import ChallengeSection from "./components/ChallengeSection";
+import Modules from "./components/Modules";
+import InteractiveDemo from "./components/InteractiveDemo";
+import WhyUniPilot from "./components/WhyUniPilot";
+import Performance from "./components/Performance";
+import Benefits from "./components/Benefits";
+import MobileSection from "./components/MobileSection";
+import ContactSection from "./components/ContactSection";
+import Teams from "./components/Teams";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
