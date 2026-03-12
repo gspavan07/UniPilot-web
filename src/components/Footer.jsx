@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="dual-logos">
               <a href="#">
                 <img
-                  src="/unipilot.png"
+                  src="/icon.png"
                   alt="UniPilot"
                   className="footer-logo unipilot-logo"
                 />

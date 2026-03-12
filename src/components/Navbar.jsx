@@ -14,11 +14,7 @@ const Navbar = () => {
       <div className="container">
         <a href="/#" className="logo">
           <div className="logo-box">
-            <img
-              src="/unipilot.png"
-              alt="UniPilot Logo"
-              className="logo-icon"
-            />
+            <img src="/icon.png" alt="UniPilot Logo" className="logo-icon" />
           </div>
           <span>UniPilot</span>
         </a>
